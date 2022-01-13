@@ -4,7 +4,7 @@ function formatDate(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = date.geMinutes();
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -32,7 +32,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind-value");
   windElement.innerHTML = Math.round(response.data.wind.speed);
-
+  let dateElement = document.querySelector("#current-date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
