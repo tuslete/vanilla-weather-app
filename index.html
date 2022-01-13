@@ -29,24 +29,24 @@
       <div class="row">
         <div class="col-4 left-page">
           <div class="cityanddate">
-            <h2>Gdansk</h2>
+            <h2 id="current-city">Gdansk</h2>
             <p>Wednesday 11:11</p>
             <p>12 January 2022</p>
           </div>
           <div class="temperature">
             <i class="fas fa-cloud-rain icon"></i>
-            <h2>-1°C | °F</h2>
-            <p>Mostly cloudy</p>
+            <h2><span id="current-temperature">-1</span>°C|°F</h2>
+            <p id="description">Mostly cloudy</p>
           </div>
         </div>
         <div class="col-8 right-page">
           <div class="humidity-wind">
             Humidity
-            <span class="value">70%</span>
+            <span class="value"> <span id="humidity-value">x</span>%</span>
           </div>
           <div class="humidity-wind">
             Wind
-            <span class="value">21 km/h</span>
+            <span class="value"> <span id="wind-value">21</span> km/h</span>
           </div>
 
           <div class="row temperature-list">
