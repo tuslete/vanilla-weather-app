@@ -39,7 +39,7 @@
   font-size: 30px;
 }
 
-p {
+p::first-letter {
   text-transform: capitalize;
 }
 input {
