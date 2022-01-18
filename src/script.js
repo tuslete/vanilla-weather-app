@@ -21,6 +21,38 @@ function formatDate(timestamp) {
   return `${currentDay}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `    
+            
+    
+              <div class="col-2">
+              <div class="day">
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt="Clear"
+                  id="icon-list"
+                  class="list-of-icons"
+                />
+                <br />
+                <div class="weather-forecast-date">${day}</div>
+                <br />
+                7°C
+             
+            </div>
+            
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -56,3 +88,6 @@ function handleSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+search("Gdansk");
+displayForecast();

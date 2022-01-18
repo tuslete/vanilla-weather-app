@@ -33,7 +33,11 @@
             <p id="current-date">Wednesday 11:11</p>
           </div>
           <div class="temperature">
-            <img src="..." alt="Clear" id="current-icon" />
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Clear"
+              id="current-icon"
+            />
             <h2><span id="current-temperature">-1</span>°C|°F</h2>
             <p id="description">Mostly cloudy</p>
           </div>
@@ -47,44 +51,7 @@
             Wind
             <span class="value"> <span id="wind-value">21</span> km/h</span>
           </div>
-
-          <div class="row temperature-list">
-            <div class="col day">
-              <i class="fas fa-cloud-rain icon"></i>
-              <br />
-              Sat
-              <br />
-              11°C
-            </div>
-            <div class="col day">
-              <i class="fas fa-cloud-rain icon"></i>
-              <br />
-              Sun
-              <br />
-              9°C
-            </div>
-            <div class="col day">
-              <i class="fas fa-cloud-showers-heavy icon"></i>
-              <br />
-              Mon
-              <br />
-              6°C
-            </div>
-            <div class="col day">
-              <i class="fas fa-cloud-sun icon"></i>
-              <br />
-              Tue
-              <br />
-              6°C
-            </div>
-            <div class="col day">
-              <i class="fas fa-cloud-sun icon"></i>
-              <br />
-              Wed
-              <br />
-              7°C
-            </div>
-          </div>
+          <div id="forecast"></div>
           <div class="change-location">
             <form id="search-form">
               <input

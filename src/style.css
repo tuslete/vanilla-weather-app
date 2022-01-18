@@ -25,7 +25,7 @@
   float: right;
 }
 
-.temperature-list {
+.day {
   padding: 130px 30px 40px 30px;
   font-size: 20px;
 }
@@ -65,4 +65,9 @@ button:hover {
 .footer {
   font-size: 12px;
   text-align: center;
+}
+.list-of-icons {
+  width: 60px;
+  margin-left: -15px;
+  opacity: 80%;
 }
