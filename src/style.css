@@ -33,6 +33,7 @@
 .day:hover {
   background-color: #a2416b;
   border-radius: 20px;
+  padding: 130px 30px 40px 30px;
 }
 
 .icon {
